@@ -5,5 +5,7 @@ import com.vaadin.shared.communication.ServerRpc;
 public interface CodeCatcherServerRpc extends ServerRpc {
 
 	public void onCodeCatched(CodeCatchedEvent event);
+	
+	public void onShortCutCatched(ShortcutEvent event);
 
 }
