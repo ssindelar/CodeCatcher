@@ -34,8 +34,8 @@ public class CodecatcherUI extends UI {
 		layout.addComponent(text);
 		
 		CodeCatcher catcher = new CodeCatcher(layout);
-		catcher.setStartCharacter('1');
-		catcher.setStartCharacter('0');
+		catcher.setStartCharacter('$');
+		catcher.setStartCharacter('+');
 		catcher.addListener(new CodeCatchedListener() {			
 			@Override
 			public void onCodeCatch(CodeCatchedEvent event) {

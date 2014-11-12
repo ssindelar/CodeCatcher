@@ -3,8 +3,10 @@ package it.lelmarir.codecatcher.widgetset.client.codecatcher;
 import java.io.Serializable;
 
 public class CodeCatchedEvent implements Serializable{
-	private static final long serialVersionUID = -5664418502802694263L;
+	private static final long serialVersionUID = -7295122867533919903L;
+	
 	private String code;
+	private boolean isScanCode;
 	
 	public CodeCatchedEvent() {
 	}
@@ -15,5 +17,13 @@ public class CodeCatchedEvent implements Serializable{
 
 	public String getCode() {
 		return code;
+	}
+
+	public void setScanCodeFlag(boolean isScanCode) {
+		this.isScanCode = isScanCode;
+	}
+	
+	public boolean isScanCodeFlag() {
+		return isScanCode;
 	}
 }
